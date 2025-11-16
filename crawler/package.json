@@ -1,0 +1,30 @@
+{
+  "name": "synthoraai-crawler",
+  "version": "1.0.0",
+  "description": "Article crawler for Data Governance Toolkit",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "crawl": "tsx src/crawler.ts",
+    "test": "jest",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^21.7.0",
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.3",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "eslint": "^8.56.0"
+  }
+}
